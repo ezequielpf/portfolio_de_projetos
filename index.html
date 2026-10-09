@@ -1,226 +1,393 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezequiel Pelisoli Francisco - Cientista de Dados</title>
+<meta name="description" content="Portfólio de projetos em Ciência de Dados de Ezequiel Pelisoli Francisco: machine learning, Python, SQL e visualização de dados.">
+<meta property="og:title" content="Ezequiel Pelisoli Francisco - Cientista de Dados">
+<meta property="og:description" content="Projetos em machine learning, dashboards e previsão de vendas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/profile_image_II.png">
+
 <!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  COMO MANTER ESTA PÁGINA
+  - Tudo está neste arquivo. Não há mais nada para instalar (pode apagar a pasta assets/).
+  - Mantenha a pasta images/ como está (foto de perfil e miniaturas dos projetos).
+  - Novo projeto: copie um bloco <article class="card"> da seção "projetos" e troque os textos.
+  - Nova experiência ou formação: copie uma linha <li> da lista e edite.
+  - Cores: altere somente as variáveis em :root (e no bloco escuro logo abaixo).
 -->
-<html>
-	<head>
-		<title>Portfólio de projetos - Ezequiel</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/profile_image_II.png" alt="" /></a>
-					<h1> Oi, sou <strong>Ezequiel Pelisoli Francisco</strong><br />
-					e você está no meu portfólio de projetos <br />
-					em Ciência de Dados.</h1>
-				</div>
-			</header>
+<style>
+:root {
+  --bg: #f3f6f9;
+  --surface: #ffffff;
+  --ink: #12254e;
+  --text: #2b3445;
+  --muted: #5d687b;
+  --accent: #14707f;
+  --line: #d9e0e8;
+  --layers: linear-gradient(90deg, #12254e 0 28%, #14707f 28% 52%, #6fb3b8 52% 74%, #d2b48c 74% 100%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1a2b;
+    --surface: #152338;
+    --ink: #e8eef7;
+    --text: #c8d2e0;
+    --muted: #92a0b5;
+    --accent: #6fc3cc;
+    --line: #26364f;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { color: var(--ink); font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; line-height: 1.25; margin: 0; }
+h2 { font-size: 1.7rem; margin-bottom: 1.2rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1rem; max-width: 70ch; }
 
-		<!-- Main -->
-			<div id="main">
+.layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); max-width: 1440px; margin: 0 auto; }
+aside { position: sticky; top: 0; align-self: start; height: 100vh; padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1rem; border-right: 1px solid var(--line); }
+.avatar { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; border: 4px solid var(--surface); box-shadow: 0 0 0 1px var(--line); background: var(--line); }
+aside h1 { font-size: 1.6rem; }
+.role { margin: 0; color: var(--muted); font-size: .95rem; }
+.layers { height: 6px; border-radius: 3px; background: var(--layers); }
+nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem; }
+nav a { display: block; padding: .3rem 0; color: var(--text); text-decoration: none; }
+nav a:hover { color: var(--accent); text-decoration: underline; }
+.links { margin-top: auto; display: grid; gap: .3rem; font-size: .95rem; }
 
-				<!-- Boas-vindas -->
-				<section id="one">
-					<header class="major">
-						<h2>Olá, fico muito feliz em receber você em meu portfólio de projetos de Ciência de Dados.</h2>
-					</header>
-					<p>Meu objetivo ao montar esta página é poder demonstrar minhas habilidades com as ferramentas da Ciência de Dados aplicadas na resolução de problemas de negócios. </br>
-					Espero que todas as informações disponibilizadas aqui façam você ter uma boa noção do meu perfil profissional. Ao final da página você irá encontrar meus contatos. Será um prazer conversar com você.</p>
-				</section>
-				
-				<!-- Sobre mim -->
-				<section id="two">
-					<header class="major">
-						<h2>Sobre mim</h2>	
-					</header>
-					<p>Me chamo Ezequiel Pelisoli Francisco e possuo graduação em Engenharia Mecânica, com mestrado e doutorado na área de simulação numérica. Além disto, no momento estou cursando um curso superior tecnológico em Ciência de Dados.</br>
-						Tenho experiência na educação de nível superior, desempenhando papéis de professor dos cursos de Engenharia, na modalidade presencial, e de tutor de atividades práticas, na modalidade de educação à distância. Atualmente também venho trabalhando em projetos pessoais que me permitam aplicar ferramentas de Ciência de Dados na solução de problemas de negócio.</br>
-						Na Ciência de Dados tenho visto uma oportunidade de aplicar, profissionalmente, as habilidades do pensamento científico que adquiri dentro do ambiente acadêmico (identificação do problema, coleta dos dados, hipóteses, análise dos dados, conclusões, previsões) para auxiliar empresas a melhorar suas tomadas de decisão através da construção de soluções baseadas em dados.</p>
-				</section>
+main { padding: 2.5rem 2.5rem 4rem; }
+section { margin-bottom: 3.5rem; scroll-margin-top: 1.5rem; }
+.lead { font-size: 1.15rem; color: var(--ink); }
 
-				<!-- Skills -->
-				<section id="three">
-					<header class="major">
-						<h2>Habilidades</h2>
-					</header>
-				  
-					<div class="row">
-						<div class="col-6 col-12-xsmall">
-							<!-- <span class='fa-stack fa-2x'>
-								<i class='far fa-square fa-stack-2x fa-rotate-45' style="color:rgb(18, 37, 78)"></i>
-								<i class='fas fa-code fa-stack-1x'></i>
-							</span>
-							<span>Linguagens de programação e banco de dados style="font-size: 26px"</span><br> -->
-							<h2>Linguagens de programação</h2>
-							<ul>
-								<li> Python com foco em análise de dados </li>
-								<li> Pensamento estratégico </li>
-								<li> Conceitos de ETL </li>
-							</ul>
-							<h2>Engenharia de software</h2>
-							<ul>
-								<li>Github</li>
-								<li>Streamlit Cloud</li>
-								<li>Flask</li>								
-							</ul>								
-						</div>
-						<div class="col-6 col-12-xsmall">
-							<h2>Visualização de dados</h2>
-							<ul>
-								<li>Matplotlib, Seaborn, Plotly</li>
-								<li>Streamlit</li>
-							</ul>								
-							<h2>Estatística e Machine Learning</h2>
-							<ul>
-								<li> Estatística descritiva ( dispersão, assimetria, kurtosis, densidade ) </li>
-								<li> Algoritmos de Regressão, classificação, clusterização e "learn to rank" </li>
-								<!-- <li> Dimensionalidade </li>
-								<li> Algoritmos de Regressão, classificação, clusterização e "learn to rank" </li>
-								<li> Estatística descritiva ( localização, dispersão, assimetria, kurtosis, densidade ) </li>
-								<li> Métricas de performance dos algoritmos ( RMSE, MAE, MAPE, Confusion Matrix, Precisão, Recall, Curva ROC, Curva Lift, AUC, Silhouette Score, DB-Index ) </li> -->
-								<li> Métricas de performance dos algoritmos ( RMSE, MAE, MAPE, Confusion Matrix, Precisão, Recall, Curva ROC, Silhouette Score, Curva Lift ) </li>
-								<li> Pacotes de Machine Learning: Scikit-learn </li>
-							</ul>							 
-						</div>
-					</div>
-				</section>
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.card img { width: 100%; height: 170px; object-fit: cover; background: var(--line); display: block; }
+.card .body { padding: 1.2rem 1.3rem 1.4rem; display: flex; flex-direction: column; gap: .6rem; flex: 1; }
+.card p { margin: 0; font-size: .97rem; }
+.card .result { color: var(--ink); }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: .2rem 0 0; padding: 0; }
+.tags li { font-size: .82rem; padding: .1rem .6rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.card .go { margin-top: auto; padding-top: .5rem; font-weight: 600; }
 
-				<!-- Experiência profissional -->
-				<section id="four">
-					<header class="major">
-						<h2>Experiência profissional</h2>
-					</header>
-					<h3>Ciência de Dados</h3>
-					<ul>
-						<li>Em andamento</li>
-					</ul>
-					<h3>Educação</h3>
-					<ul>
-						<li>2022 até o momento: Tutor dos cursos de engenharia na modalidade EAD. Desempenho as atividades de aplicação dos roteiros das atividades práticas de laboratório e de manutenção dos equipamentos/bancadas didáticas.</li>
-						<li>2020 até 2023: Professor na modalidade presencial de disciplinas do curso de engenharia mecânica. Além das atribuições relacionadas ao ensino, tais como elaborar aulas, organizar cronograma das aulas e etc., também tenho experiência como orientador de TCC (Trabalho de Conclusão de Curso).</li>
-					</ul>
-					<h3>Pesquisa</h3>
-					<ul>
-						<li>2012 até 2018: Experiência com pesquisa científica em duas universidades. Em uma delas como bolsista, durante o período de mestrado e doutorado e, na outra, como contratado. Nas duas instituições os projetos de pesquisa foram financiados pela Petrobras. As principais atividades se relacionavam com a aplicação, implementação e desenvolvimento de códigos para a simulação de fluidos. Definição do problema, aquisição/geração e análise de dados, bem como cronograma de entrega e apresentação de resultados também faziam parte da rotina de trabalho.</li>
-					</ul>
-				</section>
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: 0; }
+.when { color: var(--muted); font-size: .92rem; }
+.timeline h3 { font-size: 1.05rem; font-family: inherit; font-weight: 650; }
+.where { color: var(--muted); margin: 0 0 .4rem; font-size: .95rem; }
+.timeline ul { margin: .3rem 0 0; padding-left: 1.15rem; list-style: disc; }
+.timeline ul li { display: list-item; margin-bottom: .2rem; padding: 0; border: 0; line-height: 1.5; }
+.timeline ul li:last-child { margin-bottom: 0; }
+.timeline p { margin: 0; font-size: .97rem; }
 
-				<!-- Projetos -->
-					<section id="five">
-						<header class="major">
-							<h2>Projetos em Ciência de Dados</h2>
-						</header>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/ezequielpf/Zero_Fome_company" class="image fit"><img src="images/thumbs/restaurant_marktetplace.jpg" alt="" /></a>
-								<h3>Desenvolvimento de um painel gerencial para negócio com Streamlit</h3>
-								<p>Para a realização deste projeto foram utilizados os conceitos de programação em Python, de manipulação de dados, de pensamento estratégico e lógica de negócio, bem como ferramentas de desenvolvimento web.</p>
-								<p>O resultado final foi um painel mostrando as principais métricas de uma empresa marketplace de restaurantes presente em diversos países. O painel encontra-se hospedado em um ambiente cloud e disponbilizado através de um link web.</p>
-								</br>
-								<h3>Ferramentas utilizadas</h3>
-									<ul>
-										<li>Python</li>
-										<li>Jupyter Notebook</li>
-										<li>Visual Studio Code</li>
-										<li>Terminal</li>
-										<li>Streamlit</li>
-										<li>Streamlit Cloud</li>
-										<li>Github</li>
-									</ul>
-								<ul class="actions">
-									<li><a href="https://github.com/ezequielpf/Zero_Fome_company" class="button">Saiba mais</a></li>
-								
-								</ul>
-								<a href="https://github.com/ezequielpf/vehicle_insurance_cross_sell" class="image fit"><img src="images/thumbs/vehicle_insurance.png" alt="" /></a>
-								<h3>Propensão de compra de seguro automotivo</h3>
-								<p>Ordenação de uma base de dados de clientes, através de uma modelo de Machine Learning, para a classificação dos mais propensos a adquirir um seguro veicular.</p>
-								<p>A utilização de uma lista ordenada, em contraste à uma escolha randômica, apontou um crescimento potencial de, aproximadamente, 190% nas vendas.</p>
-								</br>
-								<h3>Ferramentas utilizadas</h3>
-									<ul>
-										<li>Python</li>
-										<li>Visual Studio Code</li>
-										<li>Github</li>
-										<li>Modelos de classificação</li>
-										<li>Hyperparameter tuning</li>
-									</ul>
-								<ul class="actions">
-									<li><a href="https://github.com/ezequielpf/vehicle_insurance_cross_sell" class="button">Saiba mais</a></li>
-								</ul>
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.skills h3 { font-size: 1.05rem; margin-bottom: .4rem; font-family: inherit; font-weight: 650; }
+.skills ul, .plain { margin: 0; padding-left: 1.1rem; }
+.plain li { margin-bottom: .8rem; }
+#publicacoes .plain li p { margin: .25rem 0 0; font-size: .97rem; }
 
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/ezequielpf/rossmann_sales_prediction" class="image fit"><img src="images/thumbs/rossmann.jpg" alt="" /></a>
-								<h3>Previsão de vendas de uma rede de farmácias</h3>
-								<p><strong>Situação:</strong> A Rossmann precisava de previsões precisas de vendas por loja para as próximas seis semanas.</p>
-  								<p><strong>Tarefa:</strong> Construir um modelo capaz de estimar vendas diárias usando dados históricos e atributos das lojas.</p>
-								<p><strong>Ação:</strong> Integramos os dados, criamos features temporais e categóricas, e implementamos um modelo global XGBoost com validação cruzada e ajuste de hiperparâmetros, comparando com métodos simples como média móvel e previsão ingênua.</p>
-  								<p><strong>Resultado:</strong> O XGBoost reduziu significativamente o erro de previsão (RMSPE de 14,24%), superando benchmarks e gerando <strong>ganhos potenciais de dezenas de milhões de euros</strong> em decisões de estoque e planejamento.</p>
-								</br>
-								<h3>Ferramentas utilizadas</h3>
-									<ul>
-										<li>Git, Github</li>
-										<li>Python, Pandas, Matplotlib e Seaborn</li>
-										<li>Visual Studio Code</li>
-										<li>Scikit-learn, Linear Regression, Random Forest, XGBoost</li>
-									</ul>
-								<ul class="actions">
-									<li><a href="https://github.com/ezequielpf/rossmann_sales_prediction" class="button">Saiba mais</a></li>
-								</ul>
-							</article>
-						</div>
-						<!-- 
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-						-->
-					</section>
+footer { color: var(--muted); font-size: .9rem; }
 
-				<!-- Contato -->
-					<section id="six">
-						<h2>Contatos</h2>
-						<p>Sinta-se à vontade para entrar em contato.</p>
-							<ul class="labeled-icons">
-								<li>
-									<h3 class="icon solid fa-envelope"></h3>
-									ezequielpf@gmail.com
-								</li>
-								<li>
-									<h3 class="icon brands fa-linkedin"></h3>
-									<a href="https://www.linkedin.com/in/ezequielpf/">LinkedIn</a>
-								</li>
-							</ul>		
-					</section>		
-			</div>
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  aside { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 2rem 1.25rem 1.5rem; }
+  .links { margin-top: 0; }
+  main { padding: 2rem 1.25rem 3rem; }
+  .timeline li { grid-template-columns: 1fr; gap: .2rem; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/ezequielpf/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/ezequielpf" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!-- <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+  <aside>
+    <img class="avatar" src="images/foto.jpg" alt="Foto de Ezequiel Pelisoli Francisco">
+    <h1>Ezequiel Pelisoli Francisco</h1>
+    <p class="role">Cientista de Dados, Analista de Dados, Machine Learning, Python</p>
+    <div class="layers" aria-hidden="true"></div>
+    <nav aria-label="Seções da página">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#publicacoes">Publicações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/ezequielpf/">LinkedIn</a>
+      <a href="https://github.com/ezequielpf">GitHub</a>
+      <a href="https://medium.com/@ezequielpf">Medium</a>
+    </div>
+  </aside>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <main>
 
-	</body>
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p class="lead">Transformo dados em decisões. Sou cientista de dados com formação em Engenharia Mecânica, mestrado e doutorado em simulação numérica e mais de 8 anos de pesquisa científica.</p>
+      <p>Trabalho com Python (Pandas, Scikit-learn, Seaborn), SQL, modelagem preditiva (regressão e classificação), clusterização e construção de pipelines de dados. A pesquisa quantitativa me deu base para modelar fenômenos complexos e comunicar resultados com clareza, e é essa combinação de rigor técnico e visão analítica que levo para os problemas de negócio.</p>
+      <p>Sou Tecnólogo em Ciência de Dados e atuo como Especialista em Ciência de Dados no Ministério da Gestão e da Inovação em Serviços Públicos. Também tenho experiência na educação superior, como professor e tutor dos cursos de Engenharia.</p>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <!-- Para adicionar um projeto, copie um bloco <article class="card"> inteiro e edite. -->
+    <section id="projetos">
+      <h2>Projetos em Ciência de Dados</h2>
+      <div class="grid">
+
+        <article class="card">
+          <img src="images/thumbs/rossmann.jpg" alt="Loja de rede de farmácias">
+          <div class="body">
+            <h3>Previsão de vendas de uma rede de farmácias</h3>
+            <p><strong>Problema:</strong> a Rossmann precisava de previsões de vendas por loja para as próximas seis semanas.</p>
+            <p><strong>Abordagem:</strong> integração dos dados, criação de variáveis temporais e categóricas e um modelo global XGBoost com validação cruzada e ajuste de hiperparâmetros, comparado a média móvel e previsão ingênua. O modelo foi publicado na nuvem e pode ser consultado pelo celular e pelo Telegram.</p>
+            <p class="result"><strong>Resultado:</strong> RMSPE de 14,24%, superando os benchmarks, com estimativa de ganhos potenciais de dezenas de milhões de euros em estoque e planejamento.</p>
+            <ul class="tags">
+              <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>XGBoost</li><li>Flask</li><li>Render</li>
+            </ul>
+            <a class="go" href="https://github.com/ezequielpf/rossmann_sales_prediction">Ver o projeto no GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/thumbs/vehicle_insurance.png" alt="Carro e apólice de seguro">
+          <div class="body">
+            <h3>Propensão de compra de seguro automotivo</h3>
+            <p><strong>Problema:</strong> priorizar os clientes com maior chance de contratar seguro veicular.</p>
+            <p><strong>Abordagem:</strong> modelo de classificação com ajuste de hiperparâmetros para ordenar a base de clientes por propensão.</p>
+            <p class="result"><strong>Resultado:</strong> a lista ordenada apontou crescimento potencial de cerca de 190% nas vendas em comparação com a escolha aleatória.</p>
+            <ul class="tags">
+              <li>Python</li><li>Classificação</li><li>Hyperparameter tuning</li>
+            </ul>
+            <a class="go" href="https://github.com/ezequielpf/vehicle_insurance_cross_sell">Ver o projeto no GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/thumbs/restaurant_marktetplace.jpg" alt="Mesa de restaurante">
+          <div class="body">
+            <h3>Painel gerencial de um marketplace de restaurantes</h3>
+            <p><strong>Problema:</strong> acompanhar as principais métricas de um marketplace de restaurantes presente em vários países.</p>
+            <p><strong>Abordagem:</strong> manipulação de dados em Python e construção de um painel interativo em Streamlit.</p>
+            <p class="result"><strong>Resultado:</strong> painel hospedado na nuvem e acessível por link web.</p>
+            <ul class="tags">
+              <li>Python</li><li>Streamlit</li><li>Streamlit Cloud</li><li>GitHub</li>
+            </ul>
+            <a class="go" href="https://github.com/ezequielpf/Zero_Fome_company">Ver o projeto no GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <!-- Novas experiências entram no TOPO da lista. -->
+    <section id="experiencia">
+      <h2>Experiência profissional</h2>
+      <ul class="timeline">
+        <li>
+          <div class="when">abr/2025 até o momento</div>
+          <div>
+            <h3>Especialista em Ciência de Dados</h3>
+            <p class="where">Ministério da Gestão e da Inovação em Serviços Públicos</p>
+            <ul>
+              <li>Atuação na gestão e articulação de iniciativas para a criação do Ecossistema de Dados Territoriais e Ambientais.</li>
+              <li>Desenvolvimento de processos de extração, transformação e carga (ETL) utilizando Python e SQL para integração e preparação de dados.</li>
+              <li>Desenvolvimento e automatização de dashboards para facilitar o acompanhamento e a visualização de informações.</li>
+              <li>Manipulação e análise de dados geoespaciais para apoiar iniciativas relacionadas a informações territoriais e ambientais.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">mar/2025 a mai/2025</div>
+          <div>
+            <h3>Estagiário, Programa de Bolsas em Data &amp; AI</h3>
+            <p class="where">Compass UOL</p>
+            <ul>
+              <li>Participação no Programa de Bolsas em Data &amp; AI, com foco em formação e desenvolvimento de competências na área de dados e inteligência artificial.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">fev/2023 a fev/2024</div>
+          <div>
+            <h3>Cientista de Dados</h3>
+            <p class="where">Comunidade DS</p>
+            <ul>
+              <li><strong>Dashboard gerencial:</strong> desenvolvimento de um painel interativo em Python e Streamlit para monitoramento das principais métricas de um marketplace de restaurantes com atuação em diferentes países. Aplicação publicada na nuvem, com acesso via navegador.</li>
+              <li><strong>Previsão de vendas:</strong> desenvolvimento e avaliação de um modelo de machine learning baseado em XGBoost para previsão de vendas de uma rede varejista de farmácias, com horizonte de seis semanas. Solução disponibilizada na nuvem, com acesso por interface web e Telegram.</li>
+            </ul>
+            <p><strong>Tecnologias:</strong> Python, Pandas, Scikit-learn, XGBoost, Streamlit, Flask, Git, GitHub e serviços de hospedagem em nuvem.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">abr/2022 a out/2026</div>
+          <div>
+            <h3>Tutor dos cursos de Engenharia</h3>
+            <p class="where">UniCesumar</p>
+            <ul>
+              <li>Acompanhamento e orientação de estudantes nas atividades práticas de laboratório dos cursos de Engenharia.</li>
+              <li>Suporte à execução das atividades experimentais e ao uso dos equipamentos e das bancadas didáticas.</li>
+              <li>Apoio à organização, conservação e manutenção dos recursos utilizados nas práticas de ensino.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">jan/2020 a dez/2023</div>
+          <div>
+            <h3>Professor</h3>
+            <p class="where">UniFtec Centro Universitário</p>
+            <ul>
+              <li>Docência em disciplinas de Engenharia, incluindo Termodinâmica, Mecânica dos Fluidos, Transferência de Calor, Vibrações Mecânicas e Máquinas de Fluxo.</li>
+              <li>Orientação de trabalhos de conclusão de curso (TCC), apoiando o desenvolvimento e a estruturação de projetos acadêmicos.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">abr/2018 a dez/2018</div>
+          <div>
+            <h3>Auxiliar de pesquisa</h3>
+            <p class="where">Universidade do Vale do Rio dos Sinos (Unisinos)</p>
+            <ul>
+              <li>Desenvolvimento de modelos numéricos para simulação de depósitos de sedimentos em ambientes marinhos e continentais, envolvendo modelagem matemática e análise de fenômenos físicos.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">set/2015 a mar/2016</div>
+          <div>
+            <h3>Professor universitário</h3>
+            <p class="where">PUCRS</p>
+            <ul>
+              <li>Docência nas disciplinas de Termodinâmica, Mecânica dos Fluidos e Trocadores de Calor.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== FORMAÇÃO ========== -->
+    <section id="formacao">
+      <h2>Formação acadêmica</h2>
+      <ul class="timeline">
+        <li>
+          <div class="when">2024 a 2026</div>
+          <div>
+            <h3>Tecnólogo em Ciência de Dados</h3>
+            <p class="where">UniCesumar, concluído</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2014 a 2018</div>
+          <div>
+            <h3>Doutorado em Engenharia e Tecnologia de Materiais</h3>
+            <p class="where">PUCRS</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2012 a 2014</div>
+          <div>
+            <h3>Mestrado em Engenharia e Tecnologia de Materiais</h3>
+            <p class="where">PUCRS</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2004 a 2010</div>
+          <div>
+            <h3>Bacharelado em Engenharia Mecânica</h3>
+            <p class="where">PUCRS</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== HABILIDADES ========== -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div>
+          <h3>Linguagens e dados</h3>
+          <ul>
+            <li>Python (Pandas, Scikit-learn)</li>
+            <li>SQL e bancos de dados</li>
+            <li>ETL e pipelines de dados</li>
+            <li>Big data</li>
+            <li>Dados geoespaciais</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Estatística e machine learning</h3>
+          <ul>
+            <li>Estatística descritiva e aplicada</li>
+            <li>Regressão, classificação, clusterização e "learn to rank"</li>
+            <li>Métricas: RMSE, MAE, MAPE, RMSPE, matriz de confusão, precisão, recall, curva ROC, curva lift, Silhouette Score</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visualização e entrega</h3>
+          <ul>
+            <li>Power BI</li>
+            <li>Matplotlib, Seaborn, Plotly</li>
+            <li>Streamlit e Streamlit Cloud</li>
+            <li>Flask, Git e GitHub</li>
+          </ul>
+        </div>
+      </div>
+      <h3 style="margin-top:2rem">Certificações</h3>
+      <ul class="plain" style="margin-top:.6rem">
+        <li>AWS Partner: Technical Accredited</li>
+        <li>Essential Math for Machine Learning: Python Edition</li>
+        <li>Git para DS</li>
+        <li>Data Visualization: criação de gráficos com o Matplotlib</li>
+        <li>MATLAB/Simulink Bible: Go From Zero to Hero</li>
+      </ul>
+      <h3 style="margin-top:2rem">Idiomas</h3>
+      <p style="margin-top:.6rem">Português (nativo) e inglês (profissional completo).</p>
+    </section>
+
+    <!-- ========== PUBLICAÇÕES ========== -->
+    <section id="publicacoes">
+      <h2>Publicações</h2>
+      <p>Artigos sobre conceitos de Machine Learning, com explicações intuitivas e exemplos práticos em Python. Leia outras publicações no <a href="https://medium.com/@ezequielpf" target="_blank" rel="noopener noreferrer">meu perfil no Medium</a>.</p>
+      <ul class="plain">
+        <li>
+          <a href="https://medium.com/@ezequielpf/corte-preciso-como-a-svm-encontra-a-fronteira-perfeita-entre-classes-b97b1cbeab33" target="_blank" rel="noopener noreferrer"><strong>Corte Preciso: Como a SVM Encontra a Fronteira Perfeita entre Classes</strong></a>
+          <p>Uma introdução intuitiva à Support Vector Machine (SVM), explicando hiperplano, margem e vetores de suporte, com implementação e visualização em Python.</p>
+        </li>
+        <li>
+          <a href="https://medium.com/@ezequielpf/vi%C3%A9s-vs-vari%C3%A2ncia-como-encontrar-o-equil%C3%ADbrio-perfeito-em-modelos-de-machine-learning-6ba8917e0ce3" target="_blank" rel="noopener noreferrer"><strong>Viés vs. Variância: Como Encontrar o Equilíbrio Perfeito em Modelos de Machine Learning</strong></a>
+          <p>Uma discussão sobre o equilíbrio entre viés e variância na construção de modelos de Machine Learning.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Será um prazer conversar. Escreva para <a href="mailto:ezequielpf@gmail.com">ezequielpf@gmail.com</a> ou me encontre no <a href="https://www.linkedin.com/in/ezequielpf/">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="ano">2026</span> Ezequiel Pelisoli Francisco</p>
+    </footer>
+
+  </main>
+</div>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
 </html>
